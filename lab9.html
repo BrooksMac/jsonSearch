@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 9</title>
+    <link href="lab9.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="header">
+<div class="border">
+
+<h1>Search client database</h1>
+
+</div>
+</div>
+
+<div class="body">
+
+<table>
+    <tr>
+        <th>
+            Search by:
+        </th>
+    </tr>
+    <tr>
+        <td class="none">
+            <input type="radio" id="name" name="searchBy" onclick="nameSearch()">
+            <label for="name">Last name</label>
+            <input type="radio" id="id" name="searchBy" onclick="idSearch()">
+            <label for="id">ID</label>
+            <input type="radio" id="phone" name="searchBy" onclick="phoneSearch()">
+            <label for="phone">Phone number</label>
+        </td>
+    </tr>
+</table>
+
+<div class="btn">
+    <input type="text" placeholder="Flintstone" id="nameInput" style="display: none">
+    <input type="text" placeholder="1" id="idInput" style="display: none">
+    <input type="text" placeholder="403-295-9076" id="phoneInput" style="display: none">
+</div>
+
+<table id="searchResults"></table>
+
+</div>
+
+<span id="loadedlistener"></span>
+
+<script src="lab9.js"></script>
+</body>
+</html>
